@@ -58,7 +58,7 @@ export function executeWork(employee: DirectorInterface | TeacherInterface) {
     }
 }
 
-type Subjects = 'Math' | 'History';
+type Subjects = "Math" | "History";
 
 export function teachClass(todayClass: Subjects) {
     if (todayClass === "Math") {
