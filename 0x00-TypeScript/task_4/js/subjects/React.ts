@@ -4,9 +4,9 @@ namespace Subjects {
     }
     export class React extends Subject {
         getRequirements() {
-            return ' Here is the list of requirements for React';
+            return 'Here is the list of requirements for React';
         }
-        
+
         getAvailableTeacher() {
             if (this.teacher.experienceTeachingReact == undefined) {
                 return 'No available teacher';
