@@ -4,5 +4,5 @@ interface Teacher {
     fullTimeEmployee: boolean;
     yearsOfExperience?: number;
     location: string;
-    [name: string]: any;
+    [porpName: string]: any;
 }
