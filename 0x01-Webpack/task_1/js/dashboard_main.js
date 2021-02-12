@@ -9,7 +9,7 @@ $("body").append("<p>Copyright - Holberton School</p>");
 
 let countClicks = 0;
 
-function updateCounter(){
+function updateCounter() {
     countClicks++;
     $('#count').text(`${count} clicks on the button`);
 }
