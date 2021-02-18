@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Gzoref.io/holbertonschool-web_react",
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "depploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
