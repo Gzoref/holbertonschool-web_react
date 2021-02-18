@@ -1,8 +1,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App/App';
-import Notifications from './Notifications/Notifications';
+import App from './src/App/App';
+import Notifications from './src/Notifications/Notifications';
 
 ReactDOM.render(
     <React.StrictMode>
