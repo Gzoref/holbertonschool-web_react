@@ -1,5 +1,7 @@
 namespace Subjects {
     export interface Teacher {
+        lastName: any;
+        firstName: any;
         experienceTeachingC?: number;
     }
     export class Cpp extends Subject {
@@ -11,7 +13,7 @@ namespace Subjects {
             if (this.teacher.experienceTeachingC == undefined){
                 return 'No available teacher';
             } else {
-                return `Available Teacher: ${this.teacher.firstName}`
+                return `Available Teacher: ${this.teacher.firstName} ${this.teacher.lastName}`
             }
         }
     }
