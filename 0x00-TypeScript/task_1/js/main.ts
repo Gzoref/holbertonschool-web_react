@@ -45,28 +45,3 @@ const StudentClass: StudentConstructor = class StudentClass implements StudentCl
         return this.firstName;
     }
 }
-
-/* 
-const teacher3: Teacher = {
-    firstName: 'John',
-    fullTimeEmployee: false,
-    lastName: 'Doe',
-    location: 'London',
-    contract: false,
-    sex: "male"
-};
-
-console.log(teacher3);
-
-const director1: Directors = {
-    firstName: 'John',
-    lastName: 'Doe',
-    location: 'London',
-    fullTimeEmployee: true,
-    numberOfReports: 17,
-};
-console.log(director1); */
-
-/* const teacher = printTeacher("John", "Doe");
-console.log(teacher);
- */
