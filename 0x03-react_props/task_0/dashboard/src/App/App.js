@@ -1,17 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Notification from '../Notifications/Notifications';
-import Login from '../Login/Login';
-import Footer from '../Footer';
-import Header from '../Header/Header';
-import holberton_logo from './holberton_logo.jpg'
-import { Fragment } from 'react';
-
+import React from "react";
+import Notifications from "../Notifications/Notifications";
+import Header from "../Header/Header";
+import Login from "../Login/Login";
+import Footer from "../Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
-    <Fragment>
-      <Notification />
+    <>
+      <Notifications />
       <div className="App">
         <Header />
       </div>
@@ -21,7 +18,7 @@ function App() {
       <div className="App-footer">
         <Footer />
       </div>
-    </Fragment>
+    </>
   );
 }
 

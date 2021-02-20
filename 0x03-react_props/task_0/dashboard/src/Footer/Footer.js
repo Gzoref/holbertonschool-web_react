@@ -1,12 +1,15 @@
-import React from 'react';
-import './Footer.css';
-import holberton_logo from './holberton_logo.jpg';
+import React from "react";
+import { getFullYear, getFooterCopy } from "../utils/utils";
+import "./Footer.css";
 
-
-const Footer = () => {
-    <div className="App-footer">
-        <p>Copyright 2020 - holberton School</p>
+function Footer() {
+  return (
+    <div className="footer">
+      <p>
+        Copyright {getFullYear()} - {getFooterCopy(true)}
+      </p>
     </div>
+  );
 }
 
 export default Footer;
