@@ -7,16 +7,6 @@ interface Teacher {
     [propName: string]: any,
 }
 
-const teacher3: Teacher = {
-    firstName: 'John',
-    fullTimeEmployee: false,
-    lastName: 'Doe',
-    location: 'London',
-    contract: false,
-};
-
-console.log(teacher3);
-
 interface Directors extends Teacher {
     numberOfReports: number,
 }
@@ -28,7 +18,6 @@ const director1: Directors = {
     fullTimeEmployee: true,
     numberOfReports: 17,
 };
-console.log(director1);
 
 
 interface printTeacherFunction {
@@ -50,7 +39,7 @@ interface StudentClassInterface {
 const StudentClass: StudentConstructor = class StudentClass implements StudentClassInterface {
     firstName: string;
     lastName: string;
-
+    
     constructor(firstName: string, lastName: string) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -62,3 +51,19 @@ const StudentClass: StudentConstructor = class StudentClass implements StudentCl
         return this.firstName;
     }
 }
+
+/* console.log(printTeacher("John", "Doe"));
+ */
+/* const teacher3: Teacher = {
+    firstName: 'John',
+    fullTimeEmployee: false,
+    lastName: 'Doe',
+    location: 'London',
+    contract: false,
+};
+console.log(teacher3);
+
+console.log(director1);
+
+console.log(); */
+
