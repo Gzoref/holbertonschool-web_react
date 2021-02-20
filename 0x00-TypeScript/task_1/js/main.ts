@@ -28,7 +28,7 @@ interface StudentClassInterface {
     displayName(): string;
 }
 
-class StudentClass implements StudentClassInterface {
+const StudentClass: StudentConstructor = class StudentClass implements StudentClassInterface {
     firstName: string;
     lastName: string;
 
@@ -45,6 +45,7 @@ class StudentClass implements StudentClassInterface {
         return this.firstName;
     }
 }
+
 /* 
 const teacher3: Teacher = {
     firstName: 'John',
@@ -66,5 +67,6 @@ const director1: Directors = {
 };
 console.log(director1); */
 
-const teacher = printTeacher("John", "Doe");
+/* const teacher = printTeacher("John", "Doe");
 console.log(teacher);
+ */
