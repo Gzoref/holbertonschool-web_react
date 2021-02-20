@@ -13,5 +13,5 @@ function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits) {
 }
 
 function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits) {
-    return { credit: subject1.credits + subject2.credits, brand: "MinorCredits" }
+    return subject1.credits + subject2.credits
 }
