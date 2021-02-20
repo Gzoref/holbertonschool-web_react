@@ -15,8 +15,8 @@ interface printTeacherFunction {
     (firstName: string, lastName: string): string,
 }
 
-export const printTeacher: printTeacherFunction = (firstName, lastName) => {
-    return `${firstName[0]}. ${lastName}}`;
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    return `${firstName[0]}. ${lastName}`;
 }
 
 interface StudentConstructor {
@@ -28,7 +28,7 @@ interface StudentClassInterface {
     displayName(): string;
 }
 
-export class StudentClass implements StudentClassInterface {
+class StudentClass implements StudentClassInterface {
     firstName: string;
     lastName: string;
 
@@ -45,3 +45,26 @@ export class StudentClass implements StudentClassInterface {
         return this.firstName;
     }
 }
+/* 
+const teacher3: Teacher = {
+    firstName: 'John',
+    fullTimeEmployee: false,
+    lastName: 'Doe',
+    location: 'London',
+    contract: false,
+    sex: "male"
+};
+
+console.log(teacher3);
+
+const director1: Directors = {
+    firstName: 'John',
+    lastName: 'Doe',
+    location: 'London',
+    fullTimeEmployee: true,
+    numberOfReports: 17,
+};
+console.log(director1); */
+
+const teacher = printTeacher("John", "Doe");
+console.log(teacher);
