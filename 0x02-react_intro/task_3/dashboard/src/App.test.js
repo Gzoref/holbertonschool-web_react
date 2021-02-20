@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import { expect } from 'chai';
 import App from './App';
 
-describ(<APP />, () => {
-    it(' renders without crashing', () => {
+describe('<App />', () => {
+    it('renders without crashing hopefully', () => {
         const wrapper = shallow(<App />);
         expect(wrapper.contains(<header className="App-header" />))
     });
