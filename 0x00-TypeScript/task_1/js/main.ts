@@ -19,6 +19,9 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
     return `${firstName[0]}. ${lastName}`;
 }
 
+/* console.log(printTeacher("John", "Doe") );
+ */
+
 interface StudentConstructor {
     new(firstName: string, lastName: string): StudentClassInterface;
 }
