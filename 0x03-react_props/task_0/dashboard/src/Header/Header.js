@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      <img src={holberton_logo} />
+      <img src={holberton_logo} className="App-logo" alt="Holberton Logo"/>
       <h1>School dashboard</h1>
     </div>
   );
