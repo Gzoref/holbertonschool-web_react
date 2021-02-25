@@ -1,10 +1,10 @@
 import React from 'react';
 import './Notifications.css'
 
-export function notification() {
+export default function notification() {
     return (
-    <div classname="Notifications">
-        <p>Here is the list of notifications</p>
-    </div>
+        <div classname="Notifications">
+            <p>Here is the list of notifications</p>
+        </div>
     );
 }

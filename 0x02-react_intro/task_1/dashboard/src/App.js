@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import holberton_logo from './holberton_logo.jpg'
 import { getFullYear, getFooterCopy } from './utils';
 
-function App() {
+export default function App() {
     return (
         <>
             <div className="App-header">
-                <img src={holberton_logo} />
+                <img src={holberton_logo} alt="Hoberton logo"/>
                 <h1>School dashboard</h1>
             </div>
             <div className="App-body">
@@ -19,5 +18,3 @@ function App() {
         </>
     );
 }
-
-export default App;
