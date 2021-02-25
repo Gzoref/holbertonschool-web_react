@@ -10,7 +10,7 @@ describe('utils', () => {
   });
 
   test('should return correct string if isIndex is false', () => {
-    expect(getFooterCopy(false)).toBe('Holberton School Main Dashboard');
+    expect(getFooterCopy(false)).toBe('Holberton School main dashboard');
   });
 
   test('getLatestNotification returns correct string', () => {

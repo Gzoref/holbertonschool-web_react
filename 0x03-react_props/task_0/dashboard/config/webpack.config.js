@@ -11,7 +11,7 @@ module.exports = {
   devServer: {
     hot: true,
     contentBase: path.resolve("./dist"),
-    compress: true,
+    compress: true
   },
   module: {
     rules: [

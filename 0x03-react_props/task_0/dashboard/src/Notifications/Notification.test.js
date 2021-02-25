@@ -1,4 +1,3 @@
-  
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
@@ -12,13 +11,13 @@ describe('<Notifications />', () => {
   it('renders a list with three items', () => {
     const wrapper = shallow(<Notifications />);
     expect(wrapper.find("ul")).to.have.lengthOf(1);
-    expect(wrapper.find("li")).to.have.lengthOf(3);
+    expect(wrapper.find("NotificationItem")).to.have.lengthOf(3);
   });
   it('renders description text', () => {
     const wrapper = shallow(<Notifications />);
     expect(wrapper.find('p').first().text()).to.equal('Here is the list of notifications');
   });
-  it('has a close button', () => {
+  it('Renders a close button', () => {
     const wrapper = shallow(<Notifications />);
     expect(wrapper.find('img')).to.have.lengthOf(1);
   });

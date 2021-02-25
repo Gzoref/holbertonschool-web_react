@@ -2,18 +2,19 @@ import React from 'react';
 import './Notifications.css';
 import { getLatestNotification } from '../utils/utils';
 import closeIcon from '../assets/close-icon.jpg';
+import NotificationItem from './NotificationItem'
 
 export const Notification = () => {
   return (
     <div className='Notifications'>
       <p>Here is the list of notifications</p>
       <ul>
-        <li data-priority='default'>New course available</li>
-        <li data-priority='urgent'>New resume available</li>
-        <li
+        <NotificationItem data-priority='default'>New course available</NotificationItem>
+        <NotificationItem data-priority='urgent'>New resume available</NotificationItem>
+        <NotificationItem
           data-priority='urgent'
-          dangerouslySetInnerHTML={{ __html: getLatestNotification() }}
-        ></li>
+          dangerouslySetInnerHTML={{ __html: getLatestNotification() }}>
+          </NotificationItem>
       </ul>
       <button
         className='close-icon'
@@ -22,7 +23,7 @@ export const Notification = () => {
       >
         <img
           src={closeIcon}
-          alt='Close'
+          alt='Close Icon'
           style={{ height: '20px', width: '20px' }}
         />
       </button>
