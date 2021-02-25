@@ -5,7 +5,7 @@ import Login from "../Login/Login";
 import Footer from "../Footer/Footer";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <>
       <Notifications />
@@ -21,5 +21,3 @@ function App() {
     </>
   );
 }
-
-export default App;
